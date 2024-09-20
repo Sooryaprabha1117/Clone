@@ -1,0 +1,38 @@
+.Text {
+    width: 280px;
+    height: 380px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 16px;
+    background-color: #fff;
+    
+  }
+  
+  .Text-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Text-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .Text-text {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .Text:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  .Text-text:hover {
+  
+    color: #f7f6f6;
+  }
+ 

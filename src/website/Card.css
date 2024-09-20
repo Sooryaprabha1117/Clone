@@ -1,0 +1,36 @@
+/* Ensure the card is styled appropriately */
+.card {
+    border: 1px solid #ddd;
+    
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s;
+    /* Remove max-width if it's causing the card to be 100% width */
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .card-content {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #555;
+  }
+  

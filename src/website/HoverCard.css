@@ -1,0 +1,104 @@
+/* src/components/HoverCard.css */
+
+.card1 {
+  position: relative;
+  width: 300px;
+  height: 400px; /* Adjust height to allow space for the hidden content */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 
+  8px 2px 8px rgba(0, 0, 0, 0.3), 
+  0 2px 8px rgba(0, 0, 0, 0.2),
+  0 8px 8px rgba(0, 0, 0, 0.2),
+  0 8px 16px rgba(0, 0, 0, 0.2),
+  0 16px 16px rgba(0, 0, 0, 0.2); 
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  margin-top: 10%;
+  
+}
+
+.card1:hover {
+  transform: scale(1.05);
+}
+
+.card1-image-wrapper {
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  width: 100%;
+  height: auto;
+}
+
+.card1-image {
+  width: 250px;
+  height: 300px;
+  display: block;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for moving up */
+  padding-bottom: 1px;
+  
+}
+
+.card1-heading {
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #fff;
+  text-align: center; /* Center align the heading */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for moving up */
+  margin-top: -30px;
+  
+}
+
+.card1-content-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0; /* Start with height 0 */
+  overflow: hidden; /* Hide overflow content */
+  transition: height 0.5s ease-in-out; /* Smooth transition */
+  color: rgb(131, 131, 134);
+}
+
+.card1:hover .card1-content-wrapper {
+  height: 90px; /* Adjust height to reveal content */
+}
+
+.card1-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background-color: #fff;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for moving down and fading */
+  transform: translateY(100%); /* Move content out of view */
+  opacity: 0; /* Initial state: invisible */
+  font-size: 0.5 rem;
+}
+
+.card1:hover .card1-content {
+  transform: translateY(0); /* Slide content up on hover */
+  opacity: 1; /* Make content visible */
+}
+
+.card1:hover .card1-image,
+.card1:hover .card1-heading {
+  transform: translateY(-20px); /* Move image and heading up on hover */
+}
+
+.card1-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 16px; /* Gap between cards */
+  justify-items: center; /* Center items horizontally */
+}
+
+.card1:nth-child(4),
+.card1:nth-child(8) {
+  grid-column: span 3; /* Center the 4th and 8th cards by spanning all 3 columns */
+  justify-self: center; /* Center the single card in the row */
+}

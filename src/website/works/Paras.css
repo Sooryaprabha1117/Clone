@@ -1,0 +1,39 @@
+#new{
+    font-size: 23px;
+    font-family:  Arial, sans-serif;
+    color: rgba(10, 10, 10, 0.63);
+    margin-left: 3px;
+    
+    font-weight: 100;
+  
+    line-height: 14px;
+}
+#div{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+span{
+    color: rgb(34, 121, 235);
+    font-size: 20px;
+}
+.span{
+    font-size: 33px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+.hr-container {
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: center; /* Center the <hr> elements horizontally */
+    align-items: center; /* Center align items vertically */
+    gap: 10px; /* Set the space between the <hr> elements */
+    padding: 10px; /* Optional: Add padding around the container */
+  }
+  
+  .hr {
+    
+    border: 2px solid rgb(7, 105, 150); /* Blue color for the top border */
+    width: 35px; /* Fixed width for each <hr> */
+    margin: 0; /* Remove default margin */
+  }
+  
+  

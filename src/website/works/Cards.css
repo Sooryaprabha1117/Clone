@@ -1,0 +1,103 @@
+/* Card.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center; /* Center the cards in the container */
+  }
+  
+  .card3 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Set the width to 25% to fit 4 cards in a row */
+    
+    margin-bottom: 10%;
+  }
+  
+ 
+  
+  .card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #555;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -71px;
+    margin-bottom: 80px;
+  }
+  
+  .enroll-button {
+    padding: 10px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 19px;
+    background-image: linear-gradient(to right, rgb(52, 52, 145) 0%, #24C6DC  51%);
+
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+ 
+.contain{
+    width: 85%;
+    height: 480px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    background-image: url('./asset4/bg1.jpg'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 10%;
+  }
+  #click{
+    margin-top: 8%;
+    margin-left: 45%;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: red;
+    border-color: white;
+    border: 2px solid white;
+    font-size: 46%;
+    background-color: none;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(0); /* Blur effect */
+  }
+  #click:hover{
+    color:blue;
+    border: 2px solid rgb(199, 12, 199);
+
+  }
+  .contentB {
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,44 @@
+/* Box.css */
+.contain{
+    width: 85%;
+    height: 480px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    background-image: url('../asset/bg1.jpg'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 10%;
+  }
+  #click{
+    margin-top: 8%;
+    margin-left: 45%;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: red;
+    border-color: white;
+    border: 2px solid white;
+    font-size: 46%;
+    background-color: none;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(0); /* Blur effect */
+  }
+  #click:hover{
+    color:blue;
+    border: 2px solid rgb(199, 12, 199);
+
+  }
+  .contentB {
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  

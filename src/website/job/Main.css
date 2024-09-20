@@ -1,0 +1,47 @@
+
+.container-1 {
+    display: flex !important;
+    align-items: center !important; /* Centers items vertically */
+    overflow: hidden; /* Prevents horizontal scrolling */
+    width: 100vw; /* Ensures container fits within viewport width */
+}
+
+.text-container-1 {
+    flex: 1 !important; /* Allows the text container to take up available space */
+    margin-left: 10% !important; /* Adjust space between text and image */
+    font-weight: 600 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    line-height: 1.4 !important;
+    max-width: 50%; /* Ensures text container doesn’t exceed half of viewport width */
+    box-sizing: border-box; /* Ensures padding and borders are included in width */
+    animation: colorTransition 5s infinite;
+
+}
+@keyframes colorTransition{
+    0%{
+        color: black;
+
+    }
+    100%{
+        color: brown;
+    }
+}
+
+.para {
+    margin: 5px 0 !important; 
+    font-size: 2.5rem !important; /* Adjust font size as needed */
+    /* Ensure font size doesn’t cause overflow */
+    line-height: 4rem;
+   
+}
+
+.image-container-1 {
+    flex: 1; /* Allows image container to take up remaining space */
+    max-width: 50%; /* Ensures image container doesn’t exceed half of viewport width */
+}
+
+img {
+    width: 50%;
+    height: 50%; /* Maintain aspect ratio */
+    display: block;
+}

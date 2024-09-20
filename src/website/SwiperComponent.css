@@ -1,0 +1,43 @@
+.swiper-container {
+  width: 100%; /* Ensure it takes the full width of its container */
+  height: 270px; /* Set height as needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scroll */
+  white-space: nowrap; /* Ensure slides are in a single horizontal line */
+  background-color: #8b8b8b6b;
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  border-radius: 17px;
+}
+
+.swiper-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+
+.mySwiper {
+  display: flex; /* Ensure swiper items are laid out in a row */
+  align-items: center; /* Align items vertically */
+  margin-top: 40px;
+}
+
+.swiper-slide {
+  display: inline-flex; /* Align slides horizontally */
+  border-radius: 8px;
+  justify-content: center; /* Center content horizontally in each slide */
+  align-items: center; /* Center content vertically in each slide */
+  width: 200px; /* Width of each slide */
+  height: 200px; /* Height of each slide */
+  background-color: #fcfbfb; /* Optional: Set a background color for visibility */
+  box-sizing: border-box;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
+ 
+}
+
+
+
